@@ -1,0 +1,1 @@
+Para ejecutar el programa, solo se debe iniciar a correr el programa, el programa va a solicitar la cantidad de robots que quiere tener, y se debe elegir entre 2 y 10\. Luego pedirá el nombre y fuerza de ataque (entre 10 y 20\) de cada uno de los robots. Al final, el programa indica quién ganó la batalla.

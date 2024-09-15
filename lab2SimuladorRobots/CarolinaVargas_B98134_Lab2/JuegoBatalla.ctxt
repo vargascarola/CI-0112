@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=JuegoBatalla
+comment1.params=cantidadRobots
+comment1.target=JuegoBatalla(int)
+comment2.params=
+comment2.target=void\ iniciarBatalla()
+comment3.params=
+comment3.target=void\ mostrarGanador()
+comment4.params=
+comment4.target=void\ mostrarEstadoRobot()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
