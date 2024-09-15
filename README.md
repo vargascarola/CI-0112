@@ -1,2 +1,5 @@
 # CI-0112
-Este programa simula una batalla entre robots, cada robot tiene puntos de vida, una fuerza para atacar y un nombre. El porgrama inicia la batalla y esta termina cuando uno de los robots pierde toda su vida. 
+Este repositorio se usará para el curso Programación I. Y aquí van a aestar disponibles los laboratorios y poryectos que se hagan. 
+
+Carolina Vargas Alfaro
+B98134
