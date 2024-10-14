@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Vector
+comment1.params=vector
+comment1.target=Vector(int[])
+comment2.params=vector
+comment2.target=void\ setVector(int[])
+comment3.params=
+comment3.target=void\ printVector()
+comment4.params=
+comment4.target=void\ randomize()
+comment5.params=
+comment5.target=void\ sortArray()
+comment6.params=numeroBusqueda
+comment6.target=void\ busquedaSecuencial(int)
+comment7.params=
+comment7.target=void\ paresImpares()
+comment8.params=
+comment8.target=int\ resta()
+numComments=9

@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=ConectaCuatro
+comment1.params=
+comment1.target=ConectaCuatro()
+comment2.params=
+comment2.target=void\ iniciarJuego()
+comment3.params=
+comment3.target=void\ mostrarTablero()
+comment4.params=columna
+comment4.target=boolean\ hacerMovimiento(int)
+comment5.params=
+comment5.target=boolean\ esJuegoTerminado()
+comment6.params=
+comment6.target=boolean\ esGanador()
+comment7.params=
+comment7.target=boolean\ esEmpate()
+comment8.params=
+comment8.target=void\ cambiarJugador()
+comment9.params=args
+comment9.target=void\ main(java.lang.String[])
+numComments=10

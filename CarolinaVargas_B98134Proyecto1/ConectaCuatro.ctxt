@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ConectaCuatro
+comment1.params=ficha1
+comment1.target=void\ setFicha1(java.lang.String)
+comment2.params=ficha2
+comment2.target=void\ setFicha2(java.lang.String)
+comment3.params=
+comment3.target=ConectaCuatro()
+numComments=4
