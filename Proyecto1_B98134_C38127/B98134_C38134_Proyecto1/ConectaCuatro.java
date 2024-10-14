@@ -54,10 +54,44 @@ public class ConectaCuatro {
 
     public boolean esGanador() { /* verifica si hay un ganador, esto cuando 4 fichas del mismo tipo se juntan/ Verifica filas, 
         columnas y diagonales*/
+        for (int i = 0; i < 7; i++){ // para verificar fichas en la posicion horizontsl, vertical y diagonal
+            for (int j = 0; j < 6; j++) {
+                char ficha = tablero[i][j];
+                if (ficha == '.') continue;  // si no hay nada, se sigue
 
-            
+                //verificar ficha juntas horizontalmente
+                if (j + 3 < 6 && ficha == tablero[i][j + 1] && ficha == tablero[i][j + 2] && ficha == tablero[i][j + 3]) {
+                    return true;
+                }
+                
+                //verifica fichas juntas verticalmente
+                if (i + 3 < 7 && ficha == tablero[i + 1][j] && ficha == tablero[i + 2][j] && ficha == tablero[i + 3][j]) {
+                    return true;
+                }
+                
+                // verificar cuatro fichas juntas en diagonal derecha
+                if (i + 3 < 7 && j + 3 < 6 && ficha == tablero[i + 1][j + 1] && ficha == tablero[i + 2][j + 2] && ficha == tablero[i + 3][j + 3]) {
+                    return true;
+                }
+                
+                // vreificar cuatro fichas juntas en diagonla izquierda
+                if (i + 3 < 7 && j - 3 >= 0 && ficha == tablero[i + 1][j - 1] && ficha == tablero[i + 2][j - 2] && ficha == tablero[i + 3][j - 3]) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
-    
-    public boolean esEmpate() {//metodo que verifica si hay empate
+
+    public boolean esEmpate() { //metodo que verifica si hay empate
+        for (int i = 0; i < 7; i++) {
+            for (int j = 0; j < 6; j++) { //recorre el array 
+                if (tablero[i][j] == '.') {
+                    return false; // si aún queda un espacio vacío, no hay empate ya que hay posibilidad de ganar
+                }
+            }
+        }
+        return true; // si ya no quedan espacios vacíos, y nongún jugador ha ganado, es un empate
     }
+
 }
