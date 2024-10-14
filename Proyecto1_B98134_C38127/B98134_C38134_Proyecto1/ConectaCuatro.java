@@ -93,5 +93,8 @@ public class ConectaCuatro {
         }
         return true; // si ya no quedan espacios vacíos, y nongún jugador ha ganado, es un empate
     }
-
+    
+    public void cambiarJugador() { //método que cambia el turno de los jugadores
+        jugadorActual = (jugadorActual == 1) ? 2 : 1; // si el jugador actual es 1, se cambia a jugador 2 y viceversa
+    }
 }
