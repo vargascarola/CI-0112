@@ -18,7 +18,6 @@ public class ConectaCuatro {
         jugadorActual = 1; // el jugador 1 es el que comienza jugando
     }
 
-    
     public void mostrarTablero() {
         System.out.println("  1 2 3 4 5 6"); //mostrar los números de las columnas
         for (int i = 0; i < 7; i++) {
@@ -38,5 +37,27 @@ public class ConectaCuatro {
             System.out.println("La columna digitada no existe, elija otra entre 1 y 6");
             return false; // false porque no puede hacer el movimiento 
         }
+         for (int fila = 6; fila >= 0; fila--) { //for para ver cuál es la fila de más abajo sin llenar y la ficha va ahi 
+            if (tablero[fila][columna] == '.') { //si esa columna y fila está vacia entonces se puede poner la ficha del jugador
+                tablero[fila][columna] = (jugadorActual == 1) ? 'X' : 'O'; //ya sea la ficha x || o
+                return true; // se usan operadores ternarios para hacer menos lineas de codigo
+            }
+        }
+
+        System.out.println("Esa columna ya está llena, por favor elija otra");
+        return false;
+    }
+
+    public boolean esJuegoTerminado() { // verifica que el juego terminó y devuelve si hay un ganador o ha sido un empate
+        return esGanador() || esEmpate(); // el empate solo sucede si ninguno de los dos jugadores gana, no pueden ganar lso dos
+    }
+
+    public boolean esGanador() { /* verifica si hay un ganador, esto cuando 4 fichas del mismo tipo se juntan/ Verifica filas, 
+        columnas y diagonales*/
+
+            
+    }
+    
+    public boolean esEmpate() {//metodo que verifica si hay empate
     }
 }
