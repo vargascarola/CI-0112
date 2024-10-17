@@ -8,6 +8,10 @@ public class ConectaCuatro {
         tablero = new char[7][6]; //tablero de 7 filas y 6 columnas
         iniciarJuego(); // método iniciar el juego
     }
+    
+    public int getJugadorActual(){ //get
+        return jugadorActual;
+    }
 
     public void iniciarJuego() { // método para iniciar el juego
         for (int i = 0; i < 7; i++) { 
